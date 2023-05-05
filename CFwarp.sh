@@ -63,8 +63,7 @@ TUN=$(cat /dev/net/tun 2>&1)
 if [[ ! $TUN =~ 'in bad state' ]] && [[ ! $TUN =~ 'in bad state' ]] && [[ ! $TUN =~ 'Die Dateizugriffsnummer ist in schlechter Verfassung' ]]; then
 green "Failed to add TUN support, it is recommended to communicate with the VPS manufacturer or enable the background setting" && exit
 else
-cat <
-     /root/tun.sh
+cat <<EOF > /root/tun.sh
 #!/bin/bash
 cd /dev
 mkdir net
