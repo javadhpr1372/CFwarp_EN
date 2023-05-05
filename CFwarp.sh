@@ -86,7 +86,6 @@ the fi
 [[ ! $(type -P qrencode) ]] && ($yumapt update;$yumapt install qrencode)
 [[ ! $(type -P python3) ]] && (yellow " It is detected that python3 is not installed, upgrading and installing " && $yumapt update;$yumapt install python3)
 [[ ! $(type -P screen) ]] && (yellow " It is detected that the screen is not installed, and the upgrade is being installed " && $yumapt update;$yumapt install screen)
-}
 
 ud4='sed -i "7 s/^/PostUp = ip -4 rule add from $(ip route get 162.159.192.1 | grep -oP '"'src \K\S+') lookup main\n/"'" /etc/wireguard/wgcf.conf && sed -i "7 s/^/PostDown = ip -4 rule delete from $(ip route get 162.159.192.1 | grep -oP '"'src \K\S+') lookup main\n/"'" /etc/wireguard/wgcf.conf'
 ud6='sed -i "7 s/^/PostUp = ip -6 rule add from $(ip route get 2606:4700:d0::a29f:c001 | grep -oP '"'src \K\S+') lookup main\n/"'" /etc/wireguard/wgcf.conf && sed -i "7 s/^/PostDown = ip -6 rule delete from $(ip route get 2606:4700:d0::a29f:c001 | grep -oP '"'src \K\S+') lookup main\n/"'" /etc/wireguard/wgcf.conf'
