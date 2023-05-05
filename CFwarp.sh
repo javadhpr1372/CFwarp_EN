@@ -136,7 +136,6 @@ WARPIPv4Status=$(white "WARP status : \c" ; green " running, WARP common account
 off)
 WARPIPv4Status=$(white "WARP status : \c" ; yellow " Closing " ; white " Service provider $isp4 obtains IPV4 address: \ c" ; yellow "$v4 $country" ; white " Netflix NF solution Lock condition: \c" ; yellow "$(./nf | awk '{print $1}' | sed -n '3p')");;
 esac
-else
 WARPIPv4Status=$(white "IPV4Configuration : \ c" ; red " Register IPV4Status ")
 fee
 if [[ -n $v6 ]]; then
