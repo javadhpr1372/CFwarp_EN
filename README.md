@@ -3,7 +3,7 @@ View the current statistical status of WARP: wg related WARP process commands
 
 Hi there 👋
 <br>
-One-click install script： <code>wget -N --no-check-certificate https://gitlab.com/en_project/CFwrap_en/-/raw/main/CFwrap.sh && bash CFwarp.sh</code>
+One-click install script： <code>wget -N --no-check-certificate https://raw.githubusercontent.com/javadhpr1372/CFwrap_EN/main/CFwrap.sh && bash CFwarp.sh</code>
 
 View the current statistical status of WARP: wg related WARP process commands
 <br>
