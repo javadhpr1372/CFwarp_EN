@@ -2,7 +2,7 @@
 export PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:~/bin
 export LANGUAGE=in_US.UTF-8
 wpygV="22.9.27V 0.3"
-remoteV=`wget -qO- https://github.com/cfwarp/CFwarp/raw/main/CFwarp.sh | sed -n 4p | cut -d '"' -f 2`
+remoteV=`wget -qO- https://gitlab.com/en_project/cfwarp_en/-/raw/main/CFwarp.sh | sed -n 4p | cut -d '"' -f 2`
 red='\033[0;31m'
 blue='\033[0;34m'
 yellow='\033[0;33m'
